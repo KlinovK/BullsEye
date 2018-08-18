@@ -28,6 +28,22 @@ class ViewController: UIViewController {
         targetValue = Int.random(in: 1...100)
         newGame()
         
+        let thumbImageNormal = UIImage(named: "SliderThumb-Normal")
+
+        slider.setThumbImage(thumbImageNormal, for: .normal)
+        
+        let thumbImageHighlighted = UIImage(named: "SliderThumb-Highlighted")
+        slider.setThumbImage(thumbImageHighlighted, for: .highlighted)
+        
+        let insets = UIEdgeInsets(top: 0, left: 14, bottom: 0, right: 14)
+        let trackLeftImage = #imageLiteral(resourceName: "SliderTrackLeft")
+        let trackLeftResizeable = trackLeftImage.resizableImage(withCapInsets: insets)
+        slider.setMinimumTrackImage(trackLeftImage, for: .normal)
+        
+        let trackRightImage = #imageLiteral(resourceName: "SmallButton")
+        let trackRightResizeable = trackRightImage.resizableImage(withCapInsets: insets)
+        slider.setMaximumTrackImage(trackRightImage, for: .normal)
+        
     }
 
 
