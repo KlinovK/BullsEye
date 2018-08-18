@@ -13,6 +13,8 @@
 		A97658E82121B66300631F5B /* BullsEye.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A97658E62121B66300631F5B /* BullsEye.xcdatamodeld */; };
 		A97658EA2121B66600631F5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A97658E92121B66600631F5B /* Assets.xcassets */; };
 		A97658ED2121B66600631F5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A97658EB2121B66600631F5B /* LaunchScreen.storyboard */; };
+		A9C7BF682128455000963C68 /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C7BF672128455000963C68 /* AboutVC.swift */; };
+		A9C7BF6A2128480100963C68 /* AboutAuthorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C7BF692128480100963C68 /* AboutAuthorVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		A97658E92121B66600631F5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A97658EC2121B66600631F5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A97658EE2121B66600631F5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9C7BF672128455000963C68 /* AboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
+		A9C7BF692128480100963C68 /* AboutAuthorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAuthorVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +60,11 @@
 		A97658DE2121B66300631F5B /* BullsEye */ = {
 			isa = PBXGroup;
 			children = (
+				A9C7BF692128480100963C68 /* AboutAuthorVC.swift */,
 				A97658DF2121B66300631F5B /* AppDelegate.swift */,
 				A97658E12121B66300631F5B /* ViewController.swift */,
 				A97658E32121B66300631F5B /* Main.storyboard */,
+				A9C7BF672128455000963C68 /* AboutVC.swift */,
 				A97658E92121B66600631F5B /* Assets.xcassets */,
 				A97658EB2121B66600631F5B /* LaunchScreen.storyboard */,
 				A97658EE2121B66600631F5B /* Info.plist */,
@@ -138,6 +144,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9C7BF6A2128480100963C68 /* AboutAuthorVC.swift in Sources */,
+				A9C7BF682128455000963C68 /* AboutVC.swift in Sources */,
 				A97658E82121B66300631F5B /* BullsEye.xcdatamodeld in Sources */,
 				A97658E22121B66300631F5B /* ViewController.swift in Sources */,
 				A97658E02121B66300631F5B /* AppDelegate.swift in Sources */,

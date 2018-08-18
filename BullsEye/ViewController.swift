@@ -26,9 +26,7 @@ class ViewController: UIViewController {
         let roundedValue = slider.value.rounded()
         currentValue = Int(roundedValue)
         targetValue = Int.random(in: 1...100)
-
-        scoreLblb.text = "\(0)"
-        roundNumberLbl.text = "\(0)"
+        newGame()
         
     }
 
@@ -36,12 +34,9 @@ class ViewController: UIViewController {
     @IBAction func showAlert(){
         let  diff = abs(targetValue - currentValue)
         var points = 100 - diff
-        
-      score += points
-        
-        
-        
+        score += points
         let title: String
+        
         if diff == 0 {
             title = "Perfect"
             points += 100
@@ -52,16 +47,26 @@ class ViewController: UIViewController {
             title = "Pretty good!"
         } else {
             title = "not even close..."
+       
         }
+      
         let message = "You scored: \(points)"
        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let action = UIAlertAction(title: "Awesome", style: .default, handler: nil)
+        let action = UIAlertAction(title: "Awesome", style: .default, handler: {
+            action in
+            self.startNewRound()
+        })
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
-        startNewRound()
+        
     }
     
 
+    @IBAction func startOverBtnWasPressed(){
+        newGame()
+    }
+    
+    
     @IBAction func sliderMoved(_ slider : UISlider){
         let roundedValue = slider.value.rounded()
         currentValue = Int(roundedValue)
@@ -82,6 +87,12 @@ class ViewController: UIViewController {
 
     }
    
+    func newGame(){
+        score = 0
+        roundNumber = 1
+        scoreLblb.text = "\(score)"
+        roundNumberLbl.text = "\(roundNumber)"
+    }
     
 }
 
